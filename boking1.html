@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edirne Yk - Formulir Reservasi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="bokingstyle.css"/> -->
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+              <div class="logo nav__logo">
+                <a href="#">Edirne<span>.YK</span></a>
+              </div>
+              <div class="nav__menu__btn" id="menu-btn">
+                <span><i class="ri-menu-line"></i></span>
+              </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="boking1.html">Reservation</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <section class="reservation-form">
+          <h2>Edirne Coffe & Space</h2>
+          <h3>Formulir Reservasi</h3>
+          <div class="reservation-container">
+            <div class="form-booking">
+              <form action="booking-proses.php" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nama_lengkap">Nama Lengkap</label>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" required>
+                </div>
+                <div class="form-group">
+                    <label for="nomor_telepon">Nomor Telepon</label>
+                    <input type="text" id="nomor_telepon" name="nomor_telepon" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="nomor_meja">Nomor Meja</label>
+                  <input type="meja" id="meja" name="meja" required>
+              </div>
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Reservasi</label>
+                    <input type="date" id="tanggal_reservasi" name="tanggal_reservasi" required>
+                </div>
+                <div class="form-group">
+                    <label for="jam">Jam Reservasi</label>
+                    <input type="time" id="jam_reservasi" name="jam_reservasi" required>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah">Jumlah Orang</label>
+                    <input type="number" id="jumlah_orang" name="jumlah_orang" min="0"  required>
+                </div>
+                <div class="form-group">
+                    <label for="catatan">Catatan Pesanan</label>
+                    <textarea id="catatan_pesanan" name="catatan_pesanan"></textarea>
+                </div>
+                <!-- <div class="form-group bukti-pembayaran">
+                    <label for="bukti_bayar">Bukti Pembayaran</label>
+                    <input type="file" id="bukti_bayar" name="bukti_bayar">
+                </div> -->
+                <div class="btn-kirim">
+                    <input type="submit" value="Kirim" name="submit">
+                </div>
+            </form>
+            </div>
+          <div class="foto_reservasi">
+            <img src="assets/revervasi.jpg" alt="" class="reservasi-images">
+          </div>
+          </div>
+      </section>
+  </main>
+</body>
+</html>

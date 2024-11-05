@@ -1,0 +1,71 @@
+/* Form Container */
+.container {
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Form Header */
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  /* Form Elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input, textarea, select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"] {
+    height: 2.5rem;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Button */
+  .btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0275d8;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #025aa5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
